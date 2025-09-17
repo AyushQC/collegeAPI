@@ -1,0 +1,1153 @@
+{
+    "name": "Government Engineering College",
+    "district": "Raichur",
+    "address": "Yaramarus Camp, Raichur - 584135, Karnataka",
+    "location": {
+        "lat": 16.2264,
+        "lng": 77.3566
+    },
+    "programs": [
+        {
+            "name": "Civil Engineering",
+            "cutoff": 70,
+            "eligibility": "12th with PCM",
+            "medium": "English",
+            "_id": "68caba511a71f6effd8a4c24"
+        },
+        {
+            "name": "Computer Science & Engineering",
+            "cutoff": 75,
+            "eligibility": "12th with PCM",
+            "medium": "English",
+            "_id": "68caba511a71f6effd8a4c25"
+        },
+        {
+            "name": "Electronics & Communication",
+            "cutoff": 72,
+            "eligibility": "12th with PCM",
+            "medium": "English",
+            "_id": "68caba511a71f6effd8a4c26"
+        },
+        {
+            "name": "Mechanical Engineering",
+            "cutoff": 68,
+            "eligibility": "12th with PCM",
+            "medium": "English",
+            "_id": "68caba511a71f6effd8a4c27"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet"
+    ],
+    "contact": {
+        "phone": "08532-123456",
+        "email": "principal@gecraichur.ac.in"
+    },
+    "_id": "68caba511a71f6effd8a4c23",
+    "__v": 0
+}
+
+{
+    "name": "Government Engineering College",
+    "district": "Koppal",
+    "address": "Talakal, Koppal - 583268, Karnataka",
+    "location": {
+        "lat": 15.35,
+        "lng": 76.15
+    },
+    "programs": [
+        {
+            "name": "Civil Engineering",
+            "cutoff": 70,
+            "eligibility": "12th with PCM",
+            "medium": "English",
+            "_id": "68cabb4e1a71f6effd8a4c2a"
+        },
+        {
+            "name": "Computer Science & Engineering",
+            "cutoff": 75,
+            "eligibility": "12th with PCM",
+            "medium": "English",
+            "_id": "68cabb4e1a71f6effd8a4c2b"
+        },
+        {
+            "name": "Electrical & Electronics",
+            "cutoff": 72,
+            "eligibility": "12th with PCM",
+            "medium": "English",
+            "_id": "68cabb4e1a71f6effd8a4c2c"
+        },
+        {
+            "name": "Electronics & Communication",
+            "cutoff": 73,
+            "eligibility": "12th with PCM",
+            "medium": "English",
+            "_id": "68cabb4e1a71f6effd8a4c2d"
+        },
+        {
+            "name": "Mechanical Engineering",
+            "cutoff": 68,
+            "eligibility": "12th with PCM",
+            "medium": "English",
+            "_id": "68cabb4e1a71f6effd8a4c2e"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "sports",
+        "internet"
+    ],
+    "contact": {
+        "phone": "08539-234567",
+        "email": "info@geckoppal.ac.in"
+    },
+    "_id": "68cabb4e1a71f6effd8a4c29",
+    "__v": 0
+}
+
+,{
+    "name": "Poojya Doddappa Appa College of Engineering (PDA)",
+    "district": "Kalaburagi",
+    "address": "Aiwan-e-Shahi Road, Kalaburagi - 585102, Karnataka",
+    "location": {
+        "lat": 17.3297,
+        "lng": 76.8343
+    },
+    "programs": [
+        {
+            "name": "Civil Engineering",
+            "cutoff": 75,
+            "eligibility": "12th with PCM",
+            "medium": "English",
+            "_id": "68cabb8c1a71f6effd8a4c31"
+        },
+        {
+            "name": "Computer Science & Engineering",
+            "cutoff": 80,
+            "eligibility": "12th with PCM",
+            "medium": "English",
+            "_id": "68cabb8c1a71f6effd8a4c32"
+        },
+        {
+            "name": "Electronics & Communication",
+            "cutoff": 78,
+            "eligibility": "12th with PCM",
+            "medium": "English",
+            "_id": "68cabb8c1a71f6effd8a4c33"
+        },
+        {
+            "name": "Mechanical Engineering",
+            "cutoff": 70,
+            "eligibility": "12th with PCM",
+            "medium": "English",
+            "_id": "68cabb8c1a71f6effd8a4c34"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports"
+    ],
+    "contact": {
+        "phone": "08472-224360",
+        "email": "principal@pdacek.ac.in"
+    },
+    "_id": "68cabb8c1a71f6effd8a4c30",
+    "__v": 0
+},
+
+{
+    "name": "Government Polytechnic Yadgir",
+    "district": "Yadgir",
+    "address": "Near Ring Road, Yadgir - 585202, Karnataka",
+    "location": {
+        "lat": 16.77,
+        "lng": 77.14
+    },
+    "programs": [
+        {
+            "name": "Diploma in Civil Engineering",
+            "cutoff": 65,
+            "eligibility": "10th Pass",
+            "medium": "English",
+            "_id": "68cabba61a71f6effd8a4c37"
+        },
+        {
+            "name": "Diploma in Mechanical Engineering",
+            "cutoff": 62,
+            "eligibility": "10th Pass",
+            "medium": "English",
+            "_id": "68cabba61a71f6effd8a4c38"
+        },
+        {
+            "name": "Diploma in Electrical Engineering",
+            "cutoff": 60,
+            "eligibility": "10th Pass",
+            "medium": "English",
+            "_id": "68cabba61a71f6effd8a4c39"
+        }
+    ],
+    "facilities": [
+        "lab",
+        "library",
+        "internet"
+    ],
+    "contact": {
+        "phone": "08472-999888",
+        "email": "info@gptyadgir.ac.in"
+    },
+    "_id": "68cabba61a71f6effd8a4c36",
+    "__v": 0
+},
+{
+    "name": "Govt PU College, Salgar",
+    "district": "Kalaburagi",
+    "address": "Salgar, Aland Taluk, Kalaburagi District, Karnataka",
+    "location": {
+        "lat": 17.3297,
+        "lng": 76.8343
+    },
+    "programs": [
+        {
+            "name": "PUC Arts",
+            "cutoff": 35,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cabe951a71f6effd8a4c40"
+        },
+        {
+            "name": "PUC Commerce",
+            "cutoff": 50,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cabe951a71f6effd8a4c41"
+        },
+        {
+            "name": "PUC Science",
+            "cutoff": 60,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cabe951a71f6effd8a4c42"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cabe951a71f6effd8a4c3f",
+    "__v": 0
+},{
+    "name": "Govt PU College, Station Bazar near CP, Gulbarga",
+    "district": "Kalaburagi",
+    "address": "Station Bazar, near CP, Gulbarga, Karnataka - 585101",
+    "location": {
+        "lat": 17.3297,
+        "lng": 76.8343
+    },
+    "programs": [
+        {
+            "name": "PUC Arts",
+            "cutoff": 35,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cabead1a71f6effd8a4c45"
+        },
+        {
+            "name": "PUC Commerce",
+            "cutoff": 50,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cabead1a71f6effd8a4c46"
+        },
+        {
+            "name": "PUC Science",
+            "cutoff": 60,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cabead1a71f6effd8a4c47"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cabead1a71f6effd8a4c44",
+    "__v": 0
+},{
+    "name": "Govt PU College, Mannur",
+    "district": "Kalaburagi",
+    "address": "Mannur, Afzalpur Taluk, Kalaburagi District, Karnataka",
+    "location": {
+        "lat": 17.3297,
+        "lng": 76.8343
+    },
+    "programs": [
+        {
+            "name": "PUC Arts",
+            "cutoff": 35,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cabecf1a71f6effd8a4c4a"
+        },
+        {
+            "name": "PUC Commerce",
+            "cutoff": 50,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cabecf1a71f6effd8a4c4b"
+        },
+        {
+            "name": "PUC Science",
+            "cutoff": 60,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cabecf1a71f6effd8a4c4c"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cabecf1a71f6effd8a4c49",
+    "__v": 0
+},{
+    "name": "Govt PU College, Mahagaon",
+    "district": "Kalaburagi",
+    "address": "Mahagaon, Gulbarga Taluk, Kalaburagi District, Karnataka - 585316",
+    "location": {
+        "lat": 17.3297,
+        "lng": 76.8343
+    },
+    "programs": [
+        {
+            "name": "PUC Arts",
+            "cutoff": 35,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac04b1a71f6effd8a4c50"
+        },
+        {
+            "name": "PUC Commerce",
+            "cutoff": 50,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac04b1a71f6effd8a4c51"
+        },
+        {
+            "name": "PUC Science",
+            "cutoff": 60,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac04b1a71f6effd8a4c52"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cac04b1a71f6effd8a4c4f",
+    "__v": 0
+},{
+    "name": "Govt PU College, Revagi",
+    "district": "Kalaburagi",
+    "address": "Revagi, Chitapur Taluk, Kalaburagi District, Karnataka",
+    "location": {
+        "lat": 17.3297,
+        "lng": 76.8343
+    },
+    "programs": [
+        {
+            "name": "PUC Arts",
+            "cutoff": 35,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac06a1a71f6effd8a4c55"
+        },
+        {
+            "name": "PUC Commerce",
+            "cutoff": 50,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac06a1a71f6effd8a4c56"
+        },
+        {
+            "name": "PUC Science",
+            "cutoff": 60,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac06a1a71f6effd8a4c57"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cac06a1a71f6effd8a4c54",
+    "__v": 0
+},{
+    "name": "Govt PU College, Aurad-B",
+    "district": "Kalaburagi",
+    "address": "Aurad-B, Gulbarga Taluk, Kalaburagi District, Karnataka",
+    "location": {
+        "lat": 17.3297,
+        "lng": 76.8343
+    },
+    "programs": [
+        {
+            "name": "PUC Arts",
+            "cutoff": 35,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac0881a71f6effd8a4c5a"
+        },
+        {
+            "name": "PUC Commerce",
+            "cutoff": 50,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac0881a71f6effd8a4c5b"
+        },
+        {
+            "name": "PUC Science",
+            "cutoff": 60,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac0881a71f6effd8a4c5c"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cac0881a71f6effd8a4c59",
+    "__v": 0
+},{
+    "name": "Govt PU College, Mandewala",
+    "district": "Kalaburagi",
+    "address": "Mandewala, Jewargi Taluk, Kalaburagi District, Karnataka",
+    "location": {
+        "lat": 17.3297,
+        "lng": 76.8343
+    },
+    "programs": [
+        {
+            "name": "PUC Arts",
+            "cutoff": 35,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac09b1a71f6effd8a4c5f"
+        },
+        {
+            "name": "PUC Commerce",
+            "cutoff": 50,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac09b1a71f6effd8a4c60"
+        },
+        {
+            "name": "PUC Science",
+            "cutoff": 60,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac09b1a71f6effd8a4c61"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cac09b1a71f6effd8a4c5e",
+    "__v": 0
+},{
+    "name": "Govt PU College, Jewargi",
+    "district": "Kalaburagi",
+    "address": "Jewargi, Kalaburagi District, Karnataka",
+    "location": {
+        "lat": 17.3297,
+        "lng": 76.8343
+    },
+    "programs": [
+        {
+            "name": "PUC Arts",
+            "cutoff": 35,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac0b21a71f6effd8a4c64"
+        },
+        {
+            "name": "PUC Commerce",
+            "cutoff": 50,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac0b21a71f6effd8a4c65"
+        },
+        {
+            "name": "PUC Science",
+            "cutoff": 60,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac0b21a71f6effd8a4c66"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cac0b21a71f6effd8a4c63",
+    "__v": 0
+},{
+    "name": "Govt PU College, Madaboola",
+    "district": "Kalaburagi",
+    "address": "Madaboola, Chittapur Taluk, Kalaburagi District, Karnataka",
+    "location": {
+        "lat": 17.3297,
+        "lng": 76.8343
+    },
+    "programs": [
+        {
+            "name": "PUC Arts",
+            "cutoff": 35,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac0c41a71f6effd8a4c69"
+        },
+        {
+            "name": "PUC Commerce",
+            "cutoff": 50,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac0c41a71f6effd8a4c6a"
+        },
+        {
+            "name": "PUC Science",
+            "cutoff": 60,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac0c41a71f6effd8a4c6b"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cac0c41a71f6effd8a4c68",
+    "__v": 0
+},{
+    "name": "Government Boys PU College, Koppal",
+    "district": "Koppal",
+    "address": "Koppal Taluk, Koppal District, Karnataka",
+    "location": {
+        "lat": 15.3452,
+        "lng": 76.1548
+    },
+    "programs": [
+        {
+            "name": "PUC Arts",
+            "cutoff": 35,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac1501a71f6effd8a4c6e"
+        },
+        {
+            "name": "PUC Commerce",
+            "cutoff": 50,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac1501a71f6effd8a4c6f"
+        },
+        {
+            "name": "PUC Science",
+            "cutoff": 60,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac1501a71f6effd8a4c70"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cac1501a71f6effd8a4c6d",
+    "__v": 0
+},{
+    "name": "Government Girls PU College, Koppal",
+    "district": "Koppal",
+    "address": "Koppal Taluk, Koppal District, Karnataka",
+    "location": { "lat": 15.3452, "lng": 76.1548 },
+    "programs": [
+      { "name": "PUC Arts", "cutoff": 35, "eligibility": "10th Pass", "medium": "English/Kannada" },
+      { "name": "PUC Commerce", "cutoff": 50, "eligibility": "10th Pass", "medium": "English/Kannada" },
+      { "name": "PUC Science", "cutoff": 60, "eligibility": "10th Pass", "medium": "English/Kannada" }
+    ],
+    "facilities": ["hostel", "lab", "library", "internet", "sports"],
+    "contact": { "phone": "N/A", "email": "N/A" }
+  },{
+    "name": "Government PU College, Bhagyanagar",
+    "district": "Koppal",
+    "address": "Bhagyanagar, Koppal District, Karnataka - 583238",
+    "location": {
+        "lat": 15.3452,
+        "lng": 76.1548
+    },
+    "programs": [
+        {
+            "name": "PUC Arts",
+            "cutoff": 35,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac2431a71f6effd8a4c78"
+        },
+        {
+            "name": "PUC Commerce",
+            "cutoff": 50,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac2431a71f6effd8a4c79"
+        },
+        {
+            "name": "PUC Science",
+            "cutoff": 60,
+            "eligibility": "10th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac2431a71f6effd8a4c7a"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cac2431a71f6effd8a4c77",
+    "__v": 0
+},{
+    "name": "Government Degree College, Yadgir",
+    "district": "Yadgiri",
+    "address": "Chitapur Road, Yadgir -585202 Karnataka State, India",
+    "location": {
+        "lat": 16.7586,
+        "lng": 77.1378
+    },
+    "programs": [
+        {
+            "name": "BA",
+            "cutoff": 60,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac2821a71f6effd8a4c81"
+        },
+        {
+            "name": "BCom",
+            "cutoff": 65,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac2821a71f6effd8a4c82"
+        },
+        {
+            "name": "BSc",
+            "cutoff": 50,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac2821a71f6effd8a4c83"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports",
+        "cafeteria"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "gdcollegeyadgir@gmail.com"
+    },
+    "_id": "68cac2821a71f6effd8a4c80",
+    "__v": 0
+},{
+    "name": "Govt First Grade College for Women, Yadgir",
+    "district": "Yadgiri",
+    "address": "Yadgiri -585202 Karnataka State India",
+    "location": {
+        "lat": 16.7586,
+        "lng": 77.1378
+    },
+    "programs": [
+        {
+            "name": "BA",
+            "cutoff": 50,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac2de1a71f6effd8a4c86"
+        },
+        {
+            "name": "BCom",
+            "cutoff": 60,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac2de1a71f6effd8a4c87"
+        },
+        {
+            "name": "BSc",
+            "cutoff": 55,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac2de1a71f6effd8a4c88"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports",
+        "cafeteria"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cac2de1a71f6effd8a4c85",
+    "__v": 0
+},{
+    "name": "Govt First Grade College, Gurumitkal",
+    "district": "Yadgiri",
+    "address": "Gurumitkal -585214 Yadgir District Karnataka State India",
+    "location": {
+        "lat": 16.8667,
+        "lng": 77.3833
+    },
+    "programs": [
+        {
+            "name": "BA",
+            "cutoff": 50,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac35b1a71f6effd8a4c8b"
+        },
+        {
+            "name": "BCom",
+            "cutoff": 60,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac35b1a71f6effd8a4c8c"
+        },
+        {
+            "name": "BSc",
+            "cutoff": 65,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac35b1a71f6effd8a4c8d"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports",
+        "cafeteria"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cac35b1a71f6effd8a4c8a",
+    "__v": 0
+},{
+    "name": "Govt First Grade College, Kembhavi",
+    "district": "Yadgiri",
+    "address": "Kembhavi 585216, Shorapur Tq, Yadgir District, Karnataka State India",
+    "location": {
+        "lat": 16.65,
+        "lng": 77.07
+    },
+    "programs": [
+        {
+            "name": "BA",
+            "cutoff": 50,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac38f1a71f6effd8a4c90"
+        },
+        {
+            "name": "BCom",
+            "cutoff": 60,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac38f1a71f6effd8a4c91"
+        },
+        {
+            "name": "BSc",
+            "cutoff": 65,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac38f1a71f6effd8a4c92"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports",
+        "cafeteria"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cac38f1a71f6effd8a4c8f",
+    "__v": 0
+},{
+    "name": "Govt First Grade College, Shorapur",
+    "district": "Yadgiri",
+    "address": "Shorapur -585224 Yadgir Karnataka State India",
+    "location": {
+        "lat": 16.521,
+        "lng": 76.7595
+    },
+    "programs": [
+        {
+            "name": "BA",
+            "cutoff": 50,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac3c71a71f6effd8a4c95"
+        },
+        {
+            "name": "BCom",
+            "cutoff": 60,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac3c71a71f6effd8a4c96"
+        },
+        {
+            "name": "BSc",
+            "cutoff": 65,
+            "eligibility": "12th Pass",
+            "medium": "English/Kannada",
+            "_id": "68cac3c71a71f6effd8a4c97"
+        }
+    ],
+    "facilities": [
+        "hostel",
+        "lab",
+        "library",
+        "internet",
+        "sports",
+        "cafeteria"
+    ],
+    "contact": {
+        "phone": "N/A",
+        "email": "N/A"
+    },
+    "_id": "68cac3c71a71f6effd8a4c94",
+    "__v": 0
+},{
+    "name": "College of Agriculture, Kalaburagi (University of Agricultural Sciences, Raichur)",
+    "district": "Kalaburagi",
+    "address": "Raneshpeer – Rukhum Tulla Darga, Aland Road, Kalaburagi, Karnataka 585101, India",
+    "location": {
+        "lat": 17.3934,
+        "lng": 76.7697
+    },
+    "programs": [
+        {
+            "name": "BSc (Hons) Agriculture",
+            "cutoff": 50,
+            "eligibility": "12th Science (PCB/PCM), KCET/AIEEA",
+            "medium": "English",
+            "_id": "68cac5101a71f6effd8a4c9b"
+        }
+    ],
+    "facilities": [
+        "lab",
+        "library",
+        "research farm",
+        "hostel",
+        "internet"
+    ],
+    "contact": {
+        "phone": "9480696305",
+        "email": "deanack@uasraichur.edu.in"
+    },
+    "_id": "68cac5101a71f6effd8a4c9a",
+    "__v": 0
+},{
+    "name": "ESIC College of Nursing, Gulbarga (RGUHS)",
+    "district": "Kalaburagi",
+    "address": "ESIC Medical College Campus, Sedam Road, Kalaburagi, Karnataka 585101, India",
+    "location": {
+        "lat": 17.3,
+        "lng": 76.8
+    },
+    "programs": [
+        {
+            "name": "BSc Nursing",
+            "cutoff": 45,
+            "eligibility": "12th Science (PCB), KCET/NEET",
+            "medium": "English",
+            "_id": "68cac5281a71f6effd8a4c9e"
+        }
+    ],
+    "facilities": [
+        "lab",
+        "library",
+        "hostel",
+        "hospital training",
+        "internet"
+    ],
+    "contact": {
+        "phone": "08472-222000",
+        "email": "esicmcgulbarga@gmail.com"
+    },
+    "_id": "68cac5281a71f6effd8a4c9d",
+    "__v": 0
+},{
+    "name": "ESIC Dental College and Hospital, Gulbarga (RGUHS)",
+    "district": "Kalaburagi",
+    "address": "ESIC Medical College Campus, Sedam Road, Kalaburagi, Karnataka 585101, India",
+    "location": {
+        "lat": 17.3,
+        "lng": 76.8
+    },
+    "programs": [
+        {
+            "name": "BDS",
+            "cutoff": 500,
+            "eligibility": "NEET Qualified, 12th Science (PCB)",
+            "medium": "English",
+            "_id": "68cac54f1a71f6effd8a4ca1"
+        }
+    ],
+    "facilities": [
+        "lab",
+        "library",
+        "hospital training",
+        "hostel",
+        "internet"
+    ],
+    "contact": {
+        "phone": "08472-222000",
+        "email": "esicmcgulbarga@gmail.com"
+    },
+    "_id": "68cac54f1a71f6effd8a4ca0",
+    "__v": 0
+},{
+    "name": "Government College of Nursing, Gulbarga (RGUHS)",
+    "district": "Kalaburagi",
+    "address": "District Hospital Campus, Kalaburagi, Karnataka 585101, India",
+    "location": {
+        "lat": 17.331,
+        "lng": 76.834
+    },
+    "programs": [
+        {
+            "name": "BSc Nursing",
+            "cutoff": 45,
+            "eligibility": "12th Science (PCB), KCET/NEET",
+            "medium": "English",
+            "_id": "68cac5ba1a71f6effd8a4ca4"
+        }
+    ],
+    "facilities": [
+        "lab",
+        "library",
+        "hostel",
+        "hospital training",
+        "internet"
+    ],
+    "contact": {
+        "phone": "08472-232000",
+        "email": "gconkalaburagi@gmail.com"
+    },
+    "_id": "68cac5ba1a71f6effd8a4ca3",
+    "__v": 0
+},{
+    "name": "Gulbarga Institute of Medical Sciences (GIMS)",
+    "district": "Kalaburagi",
+    "address": "Institute of Medical Sciences, Sedam Road, District Hospital Campus, Kalaburagi, Karnataka 585105, India",
+    "location": {
+        "lat": 17.331,
+        "lng": 76.834
+    },
+    "programs": [
+        {
+            "name": "MBBS",
+            "cutoff": 530,
+            "eligibility": "NEET Qualified, 12th Science (PCB)",
+            "medium": "English",
+            "_id": "68cac5ce1a71f6effd8a4ca7"
+        }
+    ],
+    "facilities": [
+        "lab",
+        "library",
+        "hospital",
+        "hostel",
+        "internet"
+    ],
+    "contact": {
+        "phone": "08472-234500",
+        "email": "gims.kalburagi@gmail.com"
+    },
+    "_id": "68cac5ce1a71f6effd8a4ca6",
+    "__v": 0
+},{
+    "name": "Koppal Institute of Medical Sciences (KIMS)",
+    "district": "Koppal",
+    "address": "NH 63, Gangavathi Road, Koppal, Karnataka 583231, India",
+    "location": {
+        "lat": 15.3454,
+        "lng": 76.1546
+    },
+    "programs": [
+        {
+            "name": "MBBS",
+            "cutoff": 520,
+            "eligibility": "NEET Qualified, 12th Science (PCB)",
+            "medium": "English",
+            "_id": "68cac68a1a71f6effd8a4caa"
+        }
+    ],
+    "facilities": [
+        "hospital",
+        "lab",
+        "library",
+        "hostel",
+        "internet"
+    ],
+    "contact": {
+        "phone": "08539-220105",
+        "email": "kims.koppal@gmail.com"
+    },
+    "_id": "68cac68a1a71f6effd8a4ca9",
+    "__v": 0
+},{
+    "name": "Government Institute of Paramedical Sciences, Koppal",
+    "district": "Koppal",
+    "address": "Near District Hospital, Koppal, Karnataka 583231, India",
+    "location": {
+        "lat": 15.3459,
+        "lng": 76.154
+    },
+    "programs": [
+        {
+            "name": "Diploma in Medical Laboratory Technology (DMLT)",
+            "cutoff": 45,
+            "eligibility": "12th Science (PCB)",
+            "medium": "English/Kannada",
+            "_id": "68cac6a61a71f6effd8a4cad"
+        },
+        {
+            "name": "Diploma in Medical Imaging Technology (DMIT)",
+            "cutoff": 45,
+            "eligibility": "12th Science (PCB)",
+            "medium": "English/Kannada",
+            "_id": "68cac6a61a71f6effd8a4cae"
+        },
+        {
+            "name": "Diploma in Health Inspector (DHI)",
+            "cutoff": 45,
+            "eligibility": "12th Science (PCB)",
+            "medium": "English/Kannada",
+            "_id": "68cac6a61a71f6effd8a4caf"
+        }
+    ],
+    "facilities": [
+        "lab",
+        "library",
+        "hospital training",
+        "internet"
+    ],
+    "contact": {
+        "phone": "08539-220205",
+        "email": "paramedical.koppal@gmail.com"
+    },
+    "_id": "68cac6a61a71f6effd8a4cac",
+    "__v": 0
+}
