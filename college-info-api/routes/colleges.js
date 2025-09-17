@@ -12,11 +12,29 @@ const adminAuth = (req, res, next) => {
   next();
 };
 
-// GET /colleges?district=DistrictName
+// GET /colleges?district=DistrictName&program=ProgramName
 router.get('/', async (req, res) => {
   try {
-    const filter = req.query.district ? { district: req.query.district } : {};
+    const filter = {};
+    if (req.query.district) {
+      filter.district = req.query.district;
+    }
+    if (req.query.program) {
+      filter.programs = { $elemMatch: { name: { $regex: req.query.program, $options: 'i' } } };
+    }
     const colleges = await College.find(filter);
+    // If filtering by program, only return matching programs in each college
+    if (req.query.program) {
+      const programRegex = new RegExp(req.query.program, 'i');
+      const filteredColleges = colleges.map(college => {
+        const matchingPrograms = college.programs.filter(p => programRegex.test(p.name));
+        return {
+          ...college.toObject(),
+          programs: matchingPrograms
+        };
+      }).filter(college => college.programs.length > 0);
+      return res.json(filteredColleges);
+    }
     res.json(colleges);
   } catch (err) {
     res.status(500).json({ error: err.message });

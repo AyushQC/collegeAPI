@@ -1,0 +1,115 @@
+openapi: 3.0.0
+info:
+  title: College Info API
+  version: 1.0.0
+  description: REST API for government college directory in Kalburgi division
+servers:
+  - url: http://localhost:5000
+paths:
+  /colleges:
+    get:
+      summary: Get all colleges or filter by district/program
+      parameters:
+        - in: query
+          name: district
+          schema:
+            type: string
+          description: Filter by district name
+        - in: query
+          name: program
+          schema:
+            type: string
+          description: Filter by program/course name
+      responses:
+        '200':
+          description: List of colleges
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/College'
+    post:
+      summary: Add a new college (admin only)
+      security:
+        - AdminToken: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/College'
+      responses:
+        '201':
+          description: College created
+        '401':
+          description: Unauthorized
+  /colleges/{id}:
+    get:
+      summary: Get college by ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: College details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/College'
+        '404':
+          description: College not found
+components:
+  securitySchemes:
+    AdminToken:
+      type: apiKey
+      in: header
+      name: x-admin-token
+  schemas:
+    College:
+      type: object
+      properties:
+        _id:
+          type: string
+        name:
+          type: string
+        district:
+          type: string
+        address:
+          type: string
+        location:
+          type: object
+          properties:
+            lat:
+              type: number
+            lng:
+              type: number
+        programs:
+          type: array
+          items:
+            $ref: '#/components/schemas/Program'
+        facilities:
+          type: array
+          items:
+            type: string
+        contact:
+          type: object
+          properties:
+            phone:
+              type: string
+            email:
+              type: string
+    Program:
+      type: object
+      properties:
+        name:
+          type: string
+        cutoff:
+          type: number
+        eligibility:
+          type: string
+        medium:
+          type: string
