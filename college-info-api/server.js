@@ -6,9 +6,10 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors({
-  origin: '*',
+  origin: ['https://ayushqc.github.io', 'http://localhost:3000', 'http://localhost:5000'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'x-admin-token'],
+  allowedHeaders: ['Content-Type', 'x-admin-token', 'authorization', 'Authorization'],
+  credentials: true
 }));
 app.use(express.json());
 
