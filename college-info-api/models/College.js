@@ -12,14 +12,15 @@ const CollegeSchema = new mongoose.Schema({
   district: String,
   address: String,
   location: {
-    lat: Number,
-    lng: Number
+    googleMapsLink: String, // Direct Google Maps URL
+    mapEmbedUrl: String     // Embeddable map URL
   },
   programs: [ProgramSchema],
   facilities: [String],
   contact: {
     phone: String,
-    email: String
+    email: String,
+    website: String
   }
 });
 

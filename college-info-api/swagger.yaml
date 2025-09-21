@@ -4,11 +4,14 @@ info:
   version: 1.0.0
   description: REST API for government college directory in Kalburgi division
 servers:
+  - url: https://your-app-name.onrender.com
+    description: Production server
   - url: http://localhost:5000
+    description: Development server
 paths:
   /colleges:
     get:
-      summary: Get all colleges or filter by district/program
+      summary: Get all colleges or filter by district/program (PUBLIC)
       parameters:
         - in: query
           name: district
@@ -30,9 +33,9 @@ paths:
                 items:
                   $ref: '#/components/schemas/College'
     post:
-      summary: Add a new college (admin only)
+      summary: Add a new college (ADMIN ONLY)
       security:
-        - AdminToken: []
+        - BasicAuth: []
       requestBody:
         required: true
         content:
@@ -44,9 +47,26 @@ paths:
           description: College created
         '401':
           description: Unauthorized
+  /colleges/export:
+    get:
+      summary: Export all colleges to Excel (ADMIN ONLY)
+      security:
+        - BasicAuth: []
+      responses:
+        '200':
+          description: Excel file download
+          content:
+            application/vnd.openxmlformats-officedocument.spreadsheetml.sheet:
+              schema:
+                type: string
+                format: binary
+        '401':
+          description: Unauthorized
   /colleges/{id}:
     get:
-      summary: Get college by ID
+      summary: Get college by ID (ADMIN ONLY)
+      security:
+        - BasicAuth: []
       parameters:
         - in: path
           name: id
@@ -62,12 +82,57 @@ paths:
                 $ref: '#/components/schemas/College'
         '404':
           description: College not found
+        '401':
+          description: Unauthorized
+    put:
+      summary: Update college by ID (ADMIN ONLY)
+      security:
+        - BasicAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/College'
+      responses:
+        '200':
+          description: College updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/College'
+        '404':
+          description: College not found
+        '401':
+          description: Unauthorized
+    delete:
+      summary: Delete college by ID (ADMIN ONLY)
+      security:
+        - BasicAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: College deleted
+        '404':
+          description: College not found
+        '401':
+          description: Unauthorized
 components:
   securitySchemes:
-    AdminToken:
-      type: apiKey
-      in: header
-      name: x-admin-token
+    BasicAuth:
+      type: http
+      scheme: basic
   schemas:
     College:
       type: object
@@ -83,10 +148,10 @@ components:
         location:
           type: object
           properties:
-            lat:
-              type: number
-            lng:
-              type: number
+            googleMapsLink:
+              type: string
+            mapEmbedUrl:
+              type: string
         programs:
           type: array
           items:
@@ -101,6 +166,8 @@ components:
             phone:
               type: string
             email:
+              type: string
+            website:
               type: string
     Program:
       type: object
