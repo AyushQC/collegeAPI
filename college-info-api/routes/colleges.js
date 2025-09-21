@@ -81,11 +81,11 @@ router.get('/', async (req, res) => {
 // GET /colleges/export (admin only) - Export colleges to Excel
 router.get('/export', adminAuth, async (req, res) => {
   try {
-    const colleges = await College.find({}, 'name district address contact.phone contact.email programs.name');
+    const colleges = await College.find({}, '_id name district address contact.phone contact.email programs.name');
     
     // Prepare data for Excel
     const excelData = colleges.map(college => ({
-      'College ID': college._id,
+      'College ID': college._id.toString(),
       'College Name': college.name,
       'District': college.district,
       'Address': college.address,
