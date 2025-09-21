@@ -5,12 +5,20 @@ const cors = require('cors');
 
 
 const app = express();
+
+// Enhanced CORS configuration
 app.use(cors({
   origin: ['https://ayushqc.github.io', 'http://localhost:3000', 'http://localhost:5000'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD'],
   allowedHeaders: ['Content-Type', 'x-admin-token', 'authorization', 'Authorization'],
-  credentials: true
+  credentials: true,
+  preflightContinue: false,
+  optionsSuccessStatus: 200
 }));
+
+// Explicit OPTIONS handler for all routes
+app.options('*', cors());
+
 app.use(express.json());
 
 // Swagger UI setup
@@ -21,6 +29,19 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Import routes
 const collegeRoutes = require('./routes/colleges');
+
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.json({ 
+    status: 'OK', 
+    message: 'College API is running',
+    endpoints: {
+      docs: '/api-docs',
+      colleges: '/api/colleges',
+      suggest: '/api/colleges/suggest'
+    }
+  });
+});
 
 app.use('/api/colleges', collegeRoutes);
 
