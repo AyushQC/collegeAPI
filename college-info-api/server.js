@@ -16,9 +16,6 @@ app.use(cors({
   optionsSuccessStatus: 200
 }));
 
-// Explicit OPTIONS handler for all routes
-app.options('*', cors());
-
 app.use(express.json());
 
 // Swagger UI setup
