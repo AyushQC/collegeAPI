@@ -22,7 +22,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 // Import routes
 const collegeRoutes = require('./routes/colleges');
 
-app.use('/colleges', collegeRoutes);
+app.use('/api/colleges', collegeRoutes);
 
 const PORT = process.env.PORT || 5000;
 

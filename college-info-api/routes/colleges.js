@@ -78,6 +78,119 @@ router.get('/', async (req, res) => {
   }
 });
 
+// GET /colleges/suggest - Suggest colleges based on user qualification (public)
+router.get('/suggest', async (req, res) => {
+  try {
+    const { qualification, specialization } = req.query;
+    
+    if (!qualification) {
+      return res.status(400).json({ error: 'Qualification is required (10th or 12th)' });
+    }
+
+    let query = {};
+    let programFilter = {};
+
+    if (qualification === '10th') {
+      // For 10th pass students - suggest PU colleges and diploma courses
+      programFilter = {
+        'programs.name': {
+          $regex: /PU|Pre-University|Diploma|ITI|Polytechnic/i
+        }
+      };
+    } else if (qualification === '12th') {
+      // For 12th pass students - suggest degree courses
+      programFilter = {
+        'programs.name': {
+          $regex: /B\.|Bachelor|Degree|Engineering|Medical|Commerce|Arts|Science/i
+        }
+      };
+
+      // If specialization is provided, filter by specific courses
+      if (specialization) {
+        const specializationMap = {
+          'engineering': /Engineering|B\.Tech|B\.E\.|Polytechnic/i,
+          'medical': /Medical|MBBS|Nursing|Pharmacy|Physiotherapy/i,
+          'commerce': /Commerce|B\.Com|BBA|MBA|Accounting|Finance/i,
+          'arts': /Arts|B\.A\.|Literature|History|Psychology|Sociology/i,
+          'science': /Science|B\.Sc|Physics|Chemistry|Biology|Mathematics/i,
+          'computer': /Computer|IT|Software|B\.Tech|MCA|BCA/i,
+          'management': /Management|MBA|BBA|Business/i
+        };
+
+        if (specializationMap[specialization.toLowerCase()]) {
+          programFilter['programs.name'] = {
+            $regex: specializationMap[specialization.toLowerCase()]
+          };
+        }
+      }
+    } else {
+      return res.status(400).json({ 
+        error: 'Invalid qualification. Please use "10th" or "12th"' 
+      });
+    }
+
+    const colleges = await College.find(programFilter)
+      .select('name district address programs contact location facilities')
+      .lean();
+
+    // Filter and format programs based on qualification
+    const suggestions = colleges.map(college => {
+      let relevantPrograms = college.programs;
+
+      if (qualification === '10th') {
+        relevantPrograms = college.programs.filter(program => 
+          /PU|Pre-University|Diploma|ITI|Polytechnic/i.test(program.name)
+        );
+      } else if (qualification === '12th') {
+        relevantPrograms = college.programs.filter(program => 
+          /B\.|Bachelor|Degree|Engineering|Medical|Commerce|Arts|Science/i.test(program.name)
+        );
+
+        if (specialization) {
+          const specializationMap = {
+            'engineering': /Engineering|B\.Tech|B\.E\.|Polytechnic/i,
+            'medical': /Medical|MBBS|Nursing|Pharmacy|Physiotherapy/i,
+            'commerce': /Commerce|B\.Com|BBA|MBA|Accounting|Finance/i,
+            'arts': /Arts|B\.A\.|Literature|History|Psychology|Sociology/i,
+            'science': /Science|B\.Sc|Physics|Chemistry|Biology|Mathematics/i,
+            'computer': /Computer|IT|Software|B\.Tech|MCA|BCA/i,
+            'management': /Management|MBA|BBA|Business/i
+          };
+
+          if (specializationMap[specialization.toLowerCase()]) {
+            relevantPrograms = relevantPrograms.filter(program =>
+              specializationMap[specialization.toLowerCase()].test(program.name)
+            );
+          }
+        }
+      }
+
+      return {
+        id: college._id,
+        name: college.name,
+        district: college.district,
+        address: college.address,
+        contact: college.contact,
+        location: college.location,
+        facilities: college.facilities,
+        suggestedPrograms: relevantPrograms,
+        totalSuggestedPrograms: relevantPrograms.length
+      };
+    }).filter(college => college.suggestedPrograms.length > 0);
+
+    res.json({
+      qualification,
+      specialization: specialization || null,
+      totalColleges: suggestions.length,
+      colleges: suggestions
+    });
+
+  } catch (error) {
+    console.error('Error in college suggestion:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 // GET /colleges/export (admin only) - Export colleges to Excel
 router.get('/export', adminAuth, async (req, res) => {
   try {

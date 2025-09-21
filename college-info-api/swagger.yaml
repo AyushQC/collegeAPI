@@ -47,6 +47,72 @@ paths:
           description: College created
         '401':
           description: Unauthorized
+  /colleges/suggest:
+    get:
+      summary: Get college suggestions based on user qualification
+      description: Returns colleges and programs based on user's qualification (10th or 12th) and optional specialization
+      parameters:
+        - in: query
+          name: qualification
+          required: true
+          schema:
+            type: string
+            enum: ['10th', '12th']
+          description: User's qualification level
+        - in: query
+          name: specialization
+          required: false
+          schema:
+            type: string
+            enum: ['engineering', 'medical', 'commerce', 'arts', 'science', 'computer', 'management']
+          description: Specialization area (only for 12th qualification)
+      responses:
+        '200':
+          description: College suggestions retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  qualification:
+                    type: string
+                  specialization:
+                    type: string
+                    nullable: true
+                  totalColleges:
+                    type: integer
+                  colleges:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        name:
+                          type: string
+                        district:
+                          type: string
+                        address:
+                          type: string
+                        contact:
+                          $ref: '#/components/schemas/Contact'
+                        location:
+                          $ref: '#/components/schemas/Location'
+                        facilities:
+                          type: array
+                          items:
+                            type: string
+                        suggestedPrograms:
+                          type: array
+                          items:
+                            $ref: '#/components/schemas/Program'
+                        totalSuggestedPrograms:
+                          type: integer
+        '400':
+          description: Invalid qualification or missing required parameters
+        '500':
+          description: Internal server error
+
   /colleges/export:
     get:
       summary: Export all colleges to Excel (ADMIN ONLY)
